@@ -76,6 +76,27 @@ function create() {
     holes.add(hole);
   });
 
+  coins = this.physics.add.group();
+  [
+    { x: 220, y: 270 },
+    { x: 250, y: 270 },
+    { x: 280, y: 270 }
+  ].forEach(pos => {
+    const c = this.add.rectangle(pos.x, pos.y, 15, 15, 0xFFFF00);
+    this.physics.add.existing(c);
+    c.body.setAllowGravity(false);
+    c.body.setCollideWorldBounds(true);
+    c.body.setBounce(0);
+    coins.add(c);
+  });
+  this.physics.add.collider(coins, obstacles, (coin, platform) => {
+    coin.body.setVelocity(0, 0);
+    coin.body.setBounce(0);
+    coin.body.setAllowGravity(false);
+    coin.body.setImmovable(true);
+  });
+
+
 
   
   player = this.physics.add.sprite(START_X, START_Y, 'mario')
@@ -89,7 +110,8 @@ function create() {
   cursors = this.input.keyboard.createCursorKeys();
 
   this.physics.add.collider(player, obstacles);
- 
+  
+  this.physics.add.overlap(player, coins, collectCoin, null, this);
   this.physics.add.overlap(player, holes, fallInHole, null, this);
 }
 
@@ -116,7 +138,13 @@ function update() {
   console.log(`Kursor: x=${p.x}, y=${p.y}`);
 }
 
-
+function collectCoin(player, coin) {
+    coin.destroy();
+    points += 10;
+    pointsText.setText(`Points: ${points}`);
+  }
+  
+  
 function fallInHole(player, hole) {
   player.body.checkCollision.up = false;
   player.body.checkCollision.down = false;
