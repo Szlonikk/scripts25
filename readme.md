@@ -25,3 +25,9 @@ Kod folder: 2.castle minecraft js
 ✅3.5: zbieralne coint: https://github.com/Szlonikk/scripts25/commit/ab2e9c427f5e258d305730855645a84512ef17e4
 
 Kod folder: 3.MarioPhaser
+
+## 4. Tetris Lua
+
+✅3.0: tetros 4 bloki: https://github.com/Szlonikk/scripts25/commit/c938636e1aed60147f595be14f6fc7f9d346efcd
+
+Kod folder: 4. Tetris Lua
