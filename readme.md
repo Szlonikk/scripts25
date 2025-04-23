@@ -23,3 +23,5 @@ Kod folder: 2.castle minecraft js
 ✅3.0: jeden poziom: https://github.com/Szlonikk/scripts25/commit/8d6d291aef34e7843b7bc679a929be48dbf4d543
 
 ✅3.5: zbieralne coint: https://github.com/Szlonikk/scripts25/commit/ab2e9c427f5e258d305730855645a84512ef17e4
+
+Kod folder: 3.MarioPhaser
