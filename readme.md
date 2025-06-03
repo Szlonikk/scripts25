@@ -37,3 +37,8 @@ Kod folder: 4. Tetris Lua
 ✅3.0: Crawler z Empika: https://github.com/Szlonikk/scripts25/commit/d665532789e2f41f6974ec01c66998cd754c4365#diff-dae80c191a79b630bff584f46f7d89803aa034cfb5b77413bee1c1d2fb2f524eLnull-R46
 
 Kod folder: 5. Crawler
+
+## 6. Bot discord games
+✅4.0: Reaguje na zapisywanie do rozgrywek:  https://github.com/Szlonikk/scripts25/commit/d268476f33a7d6b0923adb3198676b431f0db1cd
+
+kod folder: 6. python
